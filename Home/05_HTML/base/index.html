@@ -14,8 +14,8 @@
                         <h3>Простая форма поиска с вариантами:</h3>
                             <fieldset>
                                 <legend>Строка поиска</legend>
-                                <input type="text" size="7" maxlength="10">
-                                <input type="submit" name="search" value="Искать"><br>
+                                <input type="text" name="info" size="7" maxlength="10">
+                                <input type="submit" value="Искать"><br>
                                 <input type="radio" name="radio_group" value="web" checked>на сайте
                                 <input type="radio" name="radio_group" value="google">в google
                             </fieldset>
@@ -26,8 +26,8 @@
                         <h3>Простая форма поиска с вариантами:</h3>
                             <fieldset>
                                 <legend>Строка поиска</legend>
-                                <input type="text" size="7" autofocus>&#42;
-                                <input type="submit" name="search" value="Искать"><br>
+                                <input type="text" name="info" size="7" autofocus>&#42;
+                                <input type="submit" value="Искать"><br>
                                 <input type="radio" name="radio_group2" value="web">на сайте
                                 <input type="radio" name="radio_group2" value="google"checked>в google
                             </fieldset>
@@ -41,11 +41,10 @@
                         <h3>Простая форма авторизации:</h3>
                             <fieldset>
                                 <legend>Авторизируйтесь</legend>
-<!--спросить про символ "*"-->
                                 <input type="text" size="20" maxlength="30" id="login">&#42;<label for="login">Логин</label><br>
                                 <input type="text" size="20" maxlength="30" id="pass">&#42;<label for="pass">Пароль</label><br>
                                 <input type="checkbox" name="box_1" id="chbox1">Оставаться в системе<br>
-                                <input type="submit" name="sign_in" value="Войти">
+                                <input type="submit" value="Войти">
                             </fieldset>
                         </form>
                     </td>
@@ -58,7 +57,7 @@
                                 <input type="radio" name="survey[]" value="неплохо" >неплохо<br>
                                 <input type="radio" name="survey[]" value="хорошо" >хорошо<br>
                                 <input type="radio" name="survey[]" value="супер" >супер<br>
-                                <input type="submit" name="submit" value="Отправить"><br>
+                                <input type="submit" value="Отправить"><br>
                                 <input type="hidden" name="date_voite" value="2013.12.31">
                             </fieldset>
                         </form>
@@ -73,8 +72,7 @@
                                 <legend>Оставьте Ваш отзыв</legend>
                                 <input type="text" size="20" maxlength="30" id="name">&#42;&#8201;<label for="name">Имя</label><br>
                                 <input type="email" size="20" maxlength="30" required id="email">&#42;&#8201;<label for="email">e&#8208;mail</label><br>
-                                <input type="submit" name="submit" value="Отправить"><br>
-<!--поле с проверкой на метод POST ?-->
+                                <input type="submit" value="Отправить"><br>
                                 <textarea name="text_area">Форма отправки</textarea>
                             </fieldset>
                         </form>
@@ -105,10 +103,9 @@
                     <td>
                         <form enctype="multipart/form-data" action="http://fe.it-academy.by/TestForm.php" method="post">
                         <h3>Загрузка файла на сервер:</h3>
-<!--уточнить данный пример с "label и input" (добавить id файл к input)-->
                             <fieldset>
                                 <legend>Upload</legend>
-                                <label for="file">Файл:</label><br>
+                                <label for="file" id="file_Field">Файл:</label><br>
                                 <input type="file" name="file_Field"><br>
                                 <label for="text">Срок хранения(года):</label><br>
                                 <input type="text" size="5">
@@ -119,11 +116,10 @@
                     <td>
                         <form action="http://fe.it-academy.by/TestForm.php" method="post">
                         <h3>Валидация данных HTML5:</h3>
-<!--переделать!-->
                             <fieldset>
                                 <legend>Строка поиска</legend>
-                                <input type="text" value="Только русские буквы"><br>
-                                <input type="number" value=""><br>
+                                <input type="text" name="info" value="Только русские буквы"><br>
+                                <input type="text" name="phone" pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$" value="+375-29-1234567"><br>
                                 <input type="submit" value="Проверить">
                             </fieldset>
                         </form>
