@@ -3,10 +3,23 @@
    <HEAD>
       <META charset="utf-8">
       <TITLE>Lesson_1</TITLE>
-      <style>
-         @import url(style.css) screen;
-         @import url(print.css) print;
+
+      <style media="screen">
+         body {
+            font-family: sans-serif;
+            font-size: 14px;
+            background-color: rgb(30, 177, 81);
+         }
       </style>
+      
+      <style media="print">
+         body {
+            font-family: sans-serif;
+            font-size: 14px;
+            background-color: rgb(218, 241, 10);
+         }
+      </style>
+
    </HEAD>
    <BODY>
 
@@ -22,14 +35,15 @@
          </nav>
       </header>
 
-      <div id="Содержание">
+      <div id="content">
       <h2>Содержание</h2>
       <h3>HOW-TO: Программа на Python, Часть 1</h3>
          <ul>
-            <li><a href="#Наша первая программа">Наша первая программа</a></li>
-            <li><a href="#Пример цикла For">Пример цикла For</a></li>
+            <li><a href="#Our_first_program">Наша первая программа</a></li>
+            <li><a href="#example_For_Cycles">Пример цикла For</a></li>
          </ul>
-      <p>Из множества существующих языков программирования Python — один из самых лёгких
+<!--один из вариантов-->
+      <p style="font: size 14px; font-family: monospace; color: rgb(181, 18, 18); ">Из множества существующих языков программирования Python — один из самых лёгких
          в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
          Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
          обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
@@ -37,9 +51,9 @@
          интерфейсов <u>(GUI)</u>. Давайте создадим простую программу прямо сейчас.</p>
       </div>
 
-      <div id="Наша первая программа">
+      <div id="Our_first_program">
       <h2>Наша первая программа</h2>
-         <a href="#Содержание">К содержанию</a>
+         <a href="#content">К содержанию</a>
       <p>Наберём код в текстовом редакторе (например, в <strong>gedit</strong>).
          Потом мы разберёмся, что делает каждая строка и пойдём дальше.<br><br>
          Введите эти 4 строки:</p>
@@ -64,9 +78,9 @@
       <p>Вот и всё.</p>
       </div>
 
-      <div id="Пример цикла For">
+      <div id="example_For_Cycles">
       <h2>Пример цикла For</h2>
-         <a href="#Содержание">К содержанию</a>
+         <a href="#content">К содержанию</a>
       <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
          редактор и наберите следующую программу:</p>
          <pre><code>
