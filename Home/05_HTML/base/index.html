@@ -43,7 +43,7 @@
                                 <legend>Авторизируйтесь</legend>
 <!--спросить про символ "*"-->
                                 <input type="text" size="20" maxlength="30" id="login">&#42;<label for="login">Логин</label><br>
-                                <input type="text" size="20" maxlength="30" di="pass">&#42;<label for="pass">Пароль</label><br>
+                                <input type="text" size="20" maxlength="30" id="pass">&#42;<label for="pass">Пароль</label><br>
                                 <input type="checkbox" name="box_1" id="chbox1">Оставаться в системе<br>
                                 <input type="submit" name="sign_in" value="Войти">
                             </fieldset>
@@ -94,8 +94,8 @@
                                         <option value="5">Рязань</option>
                                         <option value="6">Магадан</option>
                                     </optgroup>
-                                    <input type="submit" value="Ок">
-                                </select>                              
+                                </select>
+                                <input type="submit" value="Ок">           
                             </fieldset>
                         </form>
                     </td>
@@ -105,7 +105,7 @@
                     <td>
                         <form enctype="multipart/form-data" action="http://fe.it-academy.by/TestForm.php" method="post">
                         <h3>Загрузка файла на сервер:</h3>
-<!--уточнить данный пример с "label и input"-->
+<!--уточнить данный пример с "label и input" (добавить id файл к input)-->
                             <fieldset>
                                 <legend>Upload</legend>
                                 <label for="file">Файл:</label><br>
