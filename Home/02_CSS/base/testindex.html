@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Document</title>
+        <style>
+            body{
+                height: 1000px;
+            }
+            .block_1 {
+                width: 15em;
+                background: rgb(123, 143, 144);
+                float: left;
+            }
+            .header {
+                width: auto;
+                height: auto;
+                background: rgb(221, 233, 234);
+                overflow: hidden;
+            }
+            .block_2 {
+                background: rgb(67, 80, 81) ;
+                margin-bottom: .2em;
+            }
+            .footerblock {
+                background: rgb(123, 143, 144);
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="block_1">
+                <h3>Блок навигации</h3>
+                <ul>
+                    <li>Ширина 15em</li>
+                    <li>Должен присуствовать цвет фона</li>
+                    <li>Располагается слева</li>
+                    <li>Блок навигации наполните контентом достаточным чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+                </ul>
+            </div>
+            <div class="block_2">
+                <h3>Статья 1</h3>
+                <p>Размер блока:<br>
+                Занимает всю доступную ширину<br>
+                Должен присуствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-botton</p>
+            </div>
+            <div class="block_2">
+                <img src="icon_mail.png" alt="mail" width="100" align="right">
+                <h3>Статья 2</h3>
+                <p>Размер блока:<br>
+                Занимает всю доступную ширину<br>
+                Должен присуствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-botton. 
+                Картинка вставлена при помощи тега, плавание организовано по правомукраю внутри данной статьи для этой картинки.</p>
+            </div>
+            <div class="footerblock">
+                <p>Нижний блок, подвал. Занимает всю доступную ширину. Высота определятся помещённым внутрь контентом.</p>
+            </div>
+        </div>
+
+    </body>
+</html>
